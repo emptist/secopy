@@ -1,0 +1,2 @@
+# secopy
+shallow copy

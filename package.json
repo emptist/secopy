@@ -1,0 +1,29 @@
+{
+  "name": "shallowcopy",
+  "version": "0.0.1",
+  "description": "shallow copy",
+  "main": "src/shallowcopy.coffee",
+  "scripts": {
+    "patch": "npm-run-all gitcommit vpatch pub",
+    "minor": "npm-run-all gitcommit vminor pub",
+    "major": "npm-run-all gitcommit vmajor pub",
+    "gitcommit": "git add --all; git commit -am 'modified'",
+    "vpatch": "npm version patch",
+    "vminor": "npm version minor",
+    "vmajor": "npm version major",
+    "postversion": "git push",
+    "prepub": "echo 已經git push 準備 publish...",
+    "pub": "npm publish ../shallowcopy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emptist/shallowcopy.git"
+  },
+  "author": "Jigme Ko <jigme1968@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emptist/shallowcopy/issues"
+  },
+  "homepage": "https://github.com/emptist/shallowcopy#readme"
+}
